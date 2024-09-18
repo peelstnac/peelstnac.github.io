@@ -24,13 +24,16 @@ short_bio: >-
 
     I am a graduating Computer Science undergraduate student at U of T.
     My research interests lie in 3D reconstruction, understanding, and generation.
-
+    In my free time, I enjoy reading fiction and playing video games.
+  </p>
+  <br />
+  <p>
     I am currently looking for a Ph.D. position starting in Fall 2025!
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
-  Credit: @nocopyrightgirl on X
+  From https://www.reddit.com/r/Gundam/comments/11yzela/i_draw_zaku/
 
 education:
 - name: University of Toronto
