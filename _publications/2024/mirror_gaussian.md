@@ -1,6 +1,7 @@
 ---
 title:          "MirrorGaussian: Reflecting 3D Gaussians for Reconstructing Mirror Reflections"
 date:           2024-05-20 00:01:00 +0800
+highlighted:    true
 selected:       true
 pub:            "ECCV"
 # pub_pre:        "Submitted to "

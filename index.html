@@ -8,7 +8,7 @@ navbar_title: Home
 {% include widgets/url_debug_message.html %}
 
 {% if site.data.display.homepage.show_experience %}
-{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+{% assign pubs = site.publications | sort: "date" | reverse | where: "highlighted", true %}
 {% include widgets/experience_card.html publications=pubs %}
 {% endif %}
 
@@ -21,9 +21,9 @@ navbar_title: Home
 
 {% if site.data.display.homepage.show_selected_publications %}
 {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-{% 
-    include widgets/publication_card.html 
-    publications=pubs
-    title='<i class="fas fa-star"></i> Selected Publications'
+{%
+include widgets/publication_card.html
+publications=pubs
+title='<i class="fas fa-star"></i> Selected Publications'
 %}
 {% endif %}
