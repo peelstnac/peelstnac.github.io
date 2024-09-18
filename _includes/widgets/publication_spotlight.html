@@ -5,17 +5,15 @@
         <div class="col-12 mb-md-0">
             <div class="row">
                 <!-- First Video -->
-                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
-                    <video class="w-100 rounded-sm" autoplay muted loop
-                        style="object-fit: contain; image-rendering: auto;">
+                <div class="col-md-6 p-0.3" style="height: 300px;"> <!-- Adjust height as needed -->
+                    <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
                         <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <!-- Second Video -->
-                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
-                    <video class="w-100 rounded-sm" autoplay muted loop
-                        style="object-fit: contain; image-rendering: auto;">
+                <div class="col-md-6 p-0.3" style="height: 300px;"> <!-- Adjust height as needed -->
+                    <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
                         <source src="{{ item.video2 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -27,7 +25,7 @@
         <div class="col-12 p-0">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{
+            <p class="mt-0 mb-0 small">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{
                 item.pub_last }}</p>
 
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
@@ -46,8 +44,8 @@
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
     <div class="row">
         <!-- First Video for Mobile -->
-        <div class="col-12 p-1"> <!-- Adjusted padding to reduce gap -->
-            <video class="w-100 rounded-sm" autoplay muted loop style="object-fit: contain; image-rendering: auto;">
+        <div class="col-12 p-1" style="height: 300px;"> <!-- Adjust height as needed -->
+            <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
                 <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -60,7 +58,7 @@
         <div>
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{
+            <p class="mt-0 mb-0 small">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{
                 item.pub_last }}</p>
 
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
