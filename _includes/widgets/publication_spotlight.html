@@ -5,17 +5,17 @@
         <div class="col-12 mb-md-0">
             <div class="row">
                 <!-- First Video -->
-                <div class="col-md-6">
-                    <video width="300" height="200" class="w-100 rounded-sm" autoplay muted loop
-                        style="object-fit: cover; image-rendering: auto;">
+                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
+                    <video class="w-100 rounded-sm" autoplay muted loop
+                        style="object-fit: contain; image-rendering: auto;">
                         <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <!-- Second Video -->
-                <div class="col-md-6">
-                    <video width="300" height="200" class="w-100 rounded-sm" autoplay muted loop
-                        style="object-fit: cover; image-rendering: auto;">
+                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
+                    <video class="w-100 rounded-sm" autoplay muted loop
+                        style="object-fit: contain; image-rendering: auto;">
                         <source src="{{ item.video2 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -47,17 +47,15 @@
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
     <div class="row">
         <!-- First Video for Mobile -->
-        <div class="col-12">
-            <video width="300" height="200" class="w-100 rounded-sm" autoplay muted loop
-                style="object-fit: cover; image-rendering: auto;">
+        <div class="col-12 p-1"> <!-- Adjusted padding to reduce gap -->
+            <video class="w-100 rounded-sm" autoplay muted loop style="object-fit: contain; image-rendering: auto;">
                 <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <!-- Second Video for Mobile -->
-        <div class="col-12">
-            <video width="300" height="200" class="w-100 rounded-sm" autoplay muted loop
-                style="object-fit: cover; image-rendering: auto;">
+        <div class="col-12 p-1"> <!-- Adjusted padding to reduce gap -->
+            <video class="w-100 rounded-sm" autoplay muted loop style="object-fit: contain; image-rendering: auto;">
                 <source src="{{ item.video2 | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
