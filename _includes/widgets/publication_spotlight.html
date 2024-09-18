@@ -5,15 +5,15 @@
         <div class="col-12 mb-md-0">
             <div class="row">
                 <!-- First Video -->
-                <div class="col-md-6 p-0.3" style="height: 300px;"> <!-- Adjust height as needed -->
-                    <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
+                <div class="col-md-6 p-1 d-flex align-items-center justify-content-center">
+                    <video class="w-100" autoplay muted loop style="object-fit: contain;">
                         <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <!-- Second Video -->
-                <div class="col-md-6 p-0.3" style="height: 300px;"> <!-- Adjust height as needed -->
-                    <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
+                <div class="col-md-6 p-1 d-flex align-items-center justify-content-center">
+                    <video class="w-100" autoplay muted loop style="object-fit: contain;">
                         <source src="{{ item.video2 | relative_url }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -44,8 +44,8 @@
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
     <div class="row">
         <!-- First Video for Mobile -->
-        <div class="col-12 p-1" style="height: 300px;"> <!-- Adjust height as needed -->
-            <video class="w-100 h-100 rounded-sm" autoplay muted loop style="object-fit: contain;">
+        <div class="col-12 p-1 d-flex align-items-center justify-content-center">
+            <video class="w-100" autoplay muted loop style="object-fit: contain;">
                 <source src="{{ item.video1 | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
