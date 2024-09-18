@@ -55,7 +55,7 @@
                         {% endif %}
                     </div>
 
-                    {% if site.data.profile.awards %}
+                    <!-- {% if site.data.profile.awards %}
                     <div class="col-md-6">
                         <div class="mx-2 my-1">
                             <h6>Honors & Awards</h6>
@@ -71,17 +71,17 @@
                             </ul>
                         </div>
                     </div>
-                    {% endif %}
+                    {% endif %} -->
 
                     <div class="col-md-6">
                         <div class="mx-2 my-1">
                             <h6>
                                 {% if include.title %}{{ include.title }}{% else %}
-                                Recent Publications
+                                Latest Publication
                                 {% endif %}
                             </h6>
                             {% for item in publications limit:include.limit %}
-                            {% include widgets/publication_item.html item=item %}
+                            {% include widgets/publication_spotlight.html item=item %}
                             {% endfor %}
                         </div>
                     </div>
