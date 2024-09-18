@@ -2,10 +2,10 @@
 <div class="d-none d-md-block">
     <div class="row no-gutters border-bottom border-gray">
         <!-- Video Row -->
-        <div class="col-12 p-4 mb-md-0">
+        <div class="col-12 mb-md-0">
             <div class="row">
                 <!-- First Video -->
-                <div class="col-md-6 p-0"> <!-- Adjusted padding to reduce gap -->
+                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
                     <video class="w-100 rounded-sm" autoplay muted loop
                         style="object-fit: contain; image-rendering: auto;">
                         <source src="{{ item.video1 | relative_url }}" type="video/mp4">
@@ -13,7 +13,7 @@
                     </video>
                 </div>
                 <!-- Second Video -->
-                <div class="col-md-6 p-0"> <!-- Adjusted padding to reduce gap -->
+                <div class="col-md-6 p-1"> <!-- Adjusted padding to reduce gap -->
                     <video class="w-100 rounded-sm" autoplay muted loop
                         style="object-fit: contain; image-rendering: auto;">
                         <source src="{{ item.video2 | relative_url }}" type="video/mp4">
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Content Row -->
-        <div class="col-12 p-4">
+        <div class="col-12 p-0">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{
