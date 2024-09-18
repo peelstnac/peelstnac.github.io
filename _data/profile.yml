@@ -34,24 +34,24 @@ education:
   date: Sep. 2020 - Apr. 2025
 
 experience:
-- name: Visual Computing Group @ Harvard University
+- name: Visual Computing Group @ Harvard
   logo: /assets/images/badges/Harvard.png
-  position: Visiting Undergraduate Research Intern
+  position: Visiting Research Intern
   date: Oct. 2024 - Dec. 2024
-- name: iQua Group @ University of Toronto
+- name: iQua Group @ U of T
   logo: /assets/images/badges/UofT.png
-  position: NSERC USRA Student Researcher
+  position: NSERC USRA Researcher
   date: May. 2024 - Aug. 2024
 - name: Noah's Ark Lab @ Huawei Canada
   logo: /assets/images/badges/Huawei.png
-  position: Computer Vision Research Intern
+  position: Research Intern
   date: May. 2023 - Apr. 2024
-- name: Middleware Systems Research Group @ University of Toronto
+- name: Middleware Systems Research Group @ U of T
   logo: /assets/images/badges/UofT.png
-  position: NSERC USRA Student Researcher
+  position: NSERC USRA Researcher
   date: May. 2022 - Dec. 2022
 - name: BIMStudio Inc.
-  logo: /assets/images/badges/Harvard.png
+  logo: /assets/images/badges/BIM.jpg
   position: Software Engineer
   date: Oct. 2020 - Aug. 2021
 
