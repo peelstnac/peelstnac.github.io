@@ -13,7 +13,7 @@
                                     {% for item in site.data.profile.education %}
                                     <li class="media mb-1">
                                         <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}"
-                                            style="width: 48px;" class="mr-1 mt-1">
+                                            style="width: 42px;" class="mr-1 mt-1">
                                         <div class="media-body">
                                             <div>{{ item.name }}</div>
                                             <div class="small">{{ item.dept }}</div>
@@ -37,7 +37,7 @@
                                     {% for item in site.data.profile.experience %}
                                     <li class="media mb-1">
                                         <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}"
-                                            style="width: 48px;" class="mr-1 mt-1">
+                                            style="width: 42px;" class="mr-1 mt-1">
                                         <div class="media-body">
                                             <div>{{ item.name }}</div>
                                             <div class="small">{{ item.dept }}</div>
@@ -71,6 +71,23 @@
                         </div>
                     </div>
                     {% endif %}
+
+                    <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+                        <h6 class="border-bottom border-gray p-3 mb-0">
+                            {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected
+                            Recent Publications{%
+                            endif %}
+                            <a href="{{ 'publications' | relative_url }}">(view all <i
+                                    class="fas fa-angle-double-right"></i>)</a>
+                        </h6>
+                        {% for item in publications limit:include.limit %}
+                        {% include widgets/publication_item.html item=item %}
+                        {% endfor %}
+                        <h6 class="d-block p-3 mt-0 text-right">
+                            <a href="{{ 'publications' | relative_url }}">All publications <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </h6>
+                    </div>
 
                 </div>
 
