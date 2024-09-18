@@ -1,15 +1,24 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
     <div class="row no-gutters border-bottom border-gray">
-        <!-- Cover Image Row -->
+        <!-- Video Row -->
         <div class="col-12 mb-md-0">
-            {%- if item.cover -%}
-            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm"
-                src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
-            {%- else -%}
-            <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}"
-                viewBox="0 0 300 200"></svg>
-            {%- endif -%}
+            <div class="row">
+                <!-- First Video -->
+                <div class="col-md-6">
+                    <video class="w-100 rounded-sm" autoplay muted loop>
+                        <source src="{{ item.video1 | relative_url }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Second Video -->
+                <div class="col-md-6">
+                    <video class="w-100 rounded-sm" autoplay muted loop>
+                        <source src="{{ item.video2 | relative_url }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
 
         <!-- Content Row -->
@@ -34,13 +43,23 @@
 </div>
 
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
-    {%- if item.cover -%}
-    <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy card-img w-100"
-        src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
-    {%- else -%}
-    <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}"
-        viewBox="0 0 300 200"></svg>
-    {%- endif -%}
+    <div class="row">
+        <!-- First Video for Mobile -->
+        <div class="col-12">
+            <video class="w-100 rounded-sm" autoplay muted loop>
+                <source src="{{ item.video1 | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Second Video for Mobile -->
+        <div class="col-12">
+            <video class="w-100 rounded-sm" autoplay muted loop>
+                <source src="{{ item.video2 | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
     <div class="card-img-overlay d-flex align-items-start flex-column"
         style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="mb-auto"></div>
