@@ -1,6 +1,6 @@
-primary_name: "Freeman Cheng"
+primary_name: "Freeman Cheng (成)"
 secondary_name: ""
-navbar_name: "Freeman Cheng"
+navbar_name: "Freeman Cheng (成)"
 
 # positions:
 # - logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
@@ -20,7 +20,12 @@ linkedin: freemancheng
 
 short_bio: >-
   <p>
-    I like math.
+    Greetings!
+
+    I am a graduating Computer Science undergraduate student at U of T.
+    My research interests lie in 3D reconstruction, understanding, and generation.
+
+    I am currently looking for a Ph.D. position starting in Fall 2025!
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
