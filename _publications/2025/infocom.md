@@ -16,4 +16,6 @@ authors:
 - Ningxin Su
 - Freeman Cheng
 - Baochun Li
+links:
+  Preprint: http://dx.doi.org/10.13140/RG.2.2.15346.00962
 ---
