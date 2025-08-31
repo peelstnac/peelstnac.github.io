@@ -41,6 +41,14 @@ education:
   date: Sep. 2020 - Apr. 2025
 
 experience:
+- name: UC Merced
+  logo: /assets/images/badges/UC_Merced.png
+  position: PhD Student
+  date: Aug. 2025 - Present
+- name: VecML Inc.
+  logo: /assets/images/badges/VecML.png
+  position: Software Engineer Intern
+  date: Jan. 2025 - Jul. 2025
 - name: Visual Computing Group @ Harvard
   logo: /assets/images/badges/Harvard.png
   position: Visiting Research Intern
