@@ -7,7 +7,7 @@ navbar_name: "Freeman Cheng (成)"
 #   name: Position 1 with logo
 # - name: Position 2 without logo
 
-email: "freeman.cheng@mail.utoronto.ca"
+email: "freemancheng@ucmerced.edu"
 cv_link: https://drive.google.com/file/d/1qms9HXHUvL0KO4FAxJSkvligGcPYpuH3/view?usp=sharing
 # gscholar: your_google_scholar_id
 github: peelstnac
@@ -19,12 +19,12 @@ linkedin: freemancheng
 # orcid: 0000-0000-0000-0000
 
 short_bio: >-
-  I am a first-year PhD student at UC Merced, advised by Prof. Ming-Hsuan Yang.
-  I like math.
+  I am a first-year PhD student at UC Merced advised by Prof. <a href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a>.
+  Happy to chat about research or other stuff.
 
-portrait_url: /assets/images/photos/ncg.jpeg
+portrait_url: /assets/images/photos/me.jpg
 portrait_caption: >-
-  From @nocopyrightgirl on X
+  I co-authored this shirt~
 
 education:
 - name: University of Toronto
