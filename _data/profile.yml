@@ -27,16 +27,16 @@ portrait_caption: >-
   I co-authored this shirt~
 
 education:
+- name: UC Merced
+  logo: /assets/images/badges/UC_Merced.png
+  position: PhD Student
+  date: Aug. 2025 - Present
 - name: University of Toronto
   logo: /assets/images/badges/UofT.png
   position: BSc in Computer Science
   date: Sep. 2020 - Apr. 2025
 
 experience:
-- name: UC Merced
-  logo: /assets/images/badges/UC_Merced.png
-  position: PhD Student
-  date: Aug. 2025 - Present
 - name: VecML Inc.
   logo: /assets/images/badges/VecML.png
   position: Software Engineer Intern
