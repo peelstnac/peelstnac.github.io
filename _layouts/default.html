@@ -38,9 +38,23 @@
             renderMathInElement(document.body, {
               delimiters: [
                   {left: '$$', right: '$$', display: true},
-                  {left: '$', right: '$', display: false}
+                  {left: '$', right: '$', display: false},
+                  {left: '\\[', right: '\\]', display: true},
+                  {left: '\\(', right: '\\)', display: false}
               ],
-              throwOnError : false
+              throwOnError : false,
+              macros: {
+                "\\NN": "\\mathbb{N}",
+                "\\ZZ": "\\mathbb{Z}",
+                "\\QQ": "\\mathbb{Q}",
+                "\\RR": "\\mathbb{R}",
+                "\\CC": "\\mathbb{C}",
+                "\\FF": "\\mathbb{F}",
+                "\\abs": "{\\left|#1\\right|}",
+                "\\norm": "{\\left\\lVert#1\\right\\rVert}",
+                "\\floor": "{\\left\\lfloor#1\\right\\rfloor}",
+                "\\ceiling": "{\\left\\lceil#1\\right\\rceil}"
+              }
             });
         });
     </script>

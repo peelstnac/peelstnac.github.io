@@ -66,6 +66,83 @@ h1, h2, h3, h4, h5, h6,
     min-height: 100px;
 }
 
+.abstract-box {
+    border-left: 3px solid #6c757d;
+    background: #f8f9fa;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+}
+
+#post-toc.toc-box {
+    border: 1px solid #e9ecef;
+    background: #fff;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+}
+
+#post-toc .toc-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.quiver-diagram {
+    width: 100%;
+    height: 320px;
+    border: none;
+    margin: 0.5rem 0 1rem;
+}
+
+/* Responsive sizing for Quiver embeds */
+@media (max-width: 575.98px) {
+    .quiver-diagram { height: 220px; }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .quiver-diagram { height: 300px; }
+}
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .quiver-diagram { height: 360px; }
+}
+@media (min-width: 1400px) {
+    .quiver-diagram { height: 420px; }
+}
+
+/* Theorem/Lemma/Definition/Proof styling */
+.theorem-block,
+.proof-block {
+    border-left: 4px solid #495057;
+    background: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+.theorem-block .theorem-title,
+.proof-block .proof-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.theorem-block.theorem { border-left-color: #0d6efd; }
+.theorem-block.lemma { border-left-color: #198754; }
+.theorem-block.definition { border-left-color: #6f42c1; }
+.proof-block { border-left-color: #fd7e14; }
+
+/* References styling */
+#references {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+}
+#references ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+#references li {
+    padding-left: 1.25rem;
+    text-indent: -1.25rem;
+    margin-bottom: 0.35rem;
+}
+
 img.lazy {
     background-image: url('images/loading.gif');
     background-repeat: no-repeat;
