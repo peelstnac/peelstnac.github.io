@@ -124,7 +124,7 @@
                     .forEach(function(ifr){ var h = parseInt(ifr.getAttribute('data-quiver-height'),10); if(h>0){ ifr.style.height = h+'px'; }});
             })();
 
-            // Auto-style theorem/lemma/definition/proof blocks
+            // Auto-style theorem/lemma/definition/proposition/corollary/proof blocks
             (function styleMathBlocks(){
                 var root = document.querySelector('.content');
                 if(!root) return;
@@ -187,7 +187,7 @@
                     if(!type) return;
                     if(type === 'proof'){
                         wrapProofBlock(p);
-                    } else if(type === 'theorem' || type === 'lemma' || type === 'definition'){
+                    } else if(type === 'theorem' || type === 'lemma' || type === 'definition' || type === 'proposition' || type === 'corollary'){
                         wrapSingleParagraph(p, type);
                     }
                 });

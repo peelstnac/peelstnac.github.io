@@ -17,8 +17,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: Kramdown
+  math_engine: katex
+  math_engine_opts:
+    output: html
+  parse_block_html: true
 plugins:
   - jekyll-email-protect
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

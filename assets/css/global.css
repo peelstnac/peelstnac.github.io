@@ -123,6 +123,8 @@ h1, h2, h3, h4, h5, h6,
 .theorem-block.theorem { border-left-color: #0d6efd; }
 .theorem-block.lemma { border-left-color: #198754; }
 .theorem-block.definition { border-left-color: #6f42c1; }
+.theorem-block.proposition { border-left-color: #20c997; }
+.theorem-block.corollary { border-left-color: #dc3545; }
 .proof-block { border-left-color: #fd7e14; }
 
 /* References styling */

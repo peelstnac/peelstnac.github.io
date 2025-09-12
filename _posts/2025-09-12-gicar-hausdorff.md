@@ -5,7 +5,7 @@ date: 2025-09-12 00:00:00 -0700
 author: Freeman Cheng
 tags: ["math"]
 abstract: |
-    This report was written for <a href="https://artsci.calendar.utoronto.ca/course/mat437h1">course</a> on K-Theory and $C^*$ Algebras taught by Prof. <a href="https://www.mathematics.utoronto.ca/people/directories/all-faculty/george-elliott">George Elliott</a>, produced after many hints from Prof. Elliott.
+    This report was written for <a href="https://artsci.calendar.utoronto.ca/course/mat437h1">course</a> on K-Theory and $C^*$ Algebras taught by Prof. <a href="https://www.mathematics.utoronto.ca/people/directories/all-faculty/george-elliott">George Elliott</a> in 2023, produced after many hints from Prof. Elliott.
     
     We compute the ordered $K_0$ group associated of the GICAR (Gauge Invariant Canonical Anticommutation Relation) Algebra and use it to solve the Hausdorff moment problem.
 ---
@@ -167,7 +167,6 @@ We are done. ∎
 (\*\*\*) Is actually circular logic.
 We leave the fix as an exercise (:p).
 
----
 ## References
 
 * <a id="ref-Czarnecki1964"></a>Czarnecki, A., Federico, P. J., Van Vleck, F. S., Halperin, I., Parker, F. D., Day, G. W., Schubert, S. R., & Younglove, J. N. (1964). Mathematical Notes. *The American Mathematical Monthly*, *71*(4), 403–413. [https://doi.org/10.1080/00029890.1964.11992254](https://doi.org/10.1080/00029890.1964.11992254)
