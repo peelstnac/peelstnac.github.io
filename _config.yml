@@ -44,7 +44,6 @@ plugins:
 collections:
   - publications
   - news
-  - showcase
 
 # Google Analytics (GA4) Measurement ID, e.g., G-XXXXXXXXXX
 # Leave empty or comment out to disable analytics
