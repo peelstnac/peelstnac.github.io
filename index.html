@@ -1,29 +1,241 @@
----
-layout: default
-title : Homepage
-navbar_title: Home
----
-{% include widgets/profile_card.html %}
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-{% include widgets/url_debug_message.html %}
+  <title>Freeman Cheng</title>
 
-{% if site.data.display.homepage.show_experience %}
-{% assign pubs = site.publications | sort: "date" | reverse | where: "highlighted", true %}
-{% include widgets/experience_card.html publications=pubs %}
-{% endif %}
+  <meta name="author" content="Freeman Cheng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% if site.data.display.homepage.show_news %}
-{% assign count_news = site.news | size %}
-{% if count_news > 0 %}
-{% include widgets/news_card.html %}
-{% endif %}
-{% endif %}
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍁</text></svg>">
 
-{% if site.data.display.homepage.show_selected_publications %}
-{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-{%
-include widgets/publication_card.html
-publications=pubs
-title='<i class="fas fa-star"></i> Selected Publications'
-%}
-{% endif %}
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYXXVF47RY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SYXXVF47RY');
+  </script>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+
+        <!-- Header -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:65%;vertical-align:middle">
+              <p style="text-align:center;margin-bottom:0.5em">
+                <name>Freeman Cheng (成)</name>
+              </p>
+              <p>I am a first-year Ph.D. student at University of California, Merced, advised by <a href="https://faculty.ucmerced.edu/mhyang/">Prof. Ming-Hsuan Yang</a>.
+              </p>
+              <p>My research interest lies in feedforward 3D reconstruction.
+              </p>
+              <p>Happy to chat about research or other stuff.
+              </p>
+              <p style="text-align:center;margin-top:1em;margin-bottom:0">
+                <a href="mailto:freemancheng@ucmerced.edu">Email</a> &nbsp/&nbsp
+                <a href="https://drive.google.com/file/d/1qms9HXHUvL0KO4FAxJSkvligGcPYpuH3/view?usp=sharing">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=pTAlxCgAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/peelstnac">GitHub</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/freemancheng">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:30%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="media/personal/me.jpg">
+              <p style="text-align:center;font-size:12px;color:#666;margin-top:0.5em;margin-bottom:0">I co-authored this shirt~</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- Header -->
+
+        <!-- News -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>News</heading>
+              <p><strong>[Mar. 2026]</strong> We release <a href="https://freemancheng.com/ReCoSplat/">ReCoSplat</a> for streaming feed-forward 3D Gaussian Splatting.</p>
+              <p><strong>[Sep. 2025]</strong> Start my Ph.D. study at University of California, Merced.</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- News -->
+
+        <!-- Education -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px 20px 10px;width:100%;vertical-align:middle">
+              <heading>Education</heading>
+              <div class="cv-list">
+                <div class="cv-row">
+                  <div class="cv-logo"><img src="media/personal/ucm.png" alt="UC Merced"></div>
+                  <div class="cv-body">
+                    <span class="cv-title">University of California, Merced</span><br>
+                    <span class="cv-role">Ph.D. Student</span>
+                  </div>
+                  <div class="cv-date">Sep. 2025 – Present</div>
+                </div>
+                <div class="cv-row">
+                  <div class="cv-logo"><img src="media/personal/uoft.png" alt="University of Toronto"></div>
+                  <div class="cv-body">
+                    <span class="cv-title">University of Toronto</span><br>
+                    <span class="cv-role">B.Sc. in Computer Science</span>
+                  </div>
+                  <div class="cv-date">Sep. 2020 – Apr. 2025</div>
+                </div>
+              </div>
+              <div class="cv-lines">
+                <div class="cv-line">
+                  <div class="cv-line-text"><span class="cv-line-title">Visual Computing Group @ Harvard</span>, Visiting Research Intern</div>
+                  <div class="cv-date">Oct. 2024 – Dec. 2024</div>
+                </div>
+                <div class="cv-line">
+                  <div class="cv-line-text"><span class="cv-line-title">iQua Group @ University of Toronto</span>, NSERC USRA Researcher</div>
+                  <div class="cv-date">May 2024 – Aug. 2024</div>
+                </div>
+                <div class="cv-line">
+                  <div class="cv-line-text"><span class="cv-line-title">Middleware Systems Research Group @ University of Toronto</span>, NSERC USRA Researcher</div>
+                  <div class="cv-date">May 2022 – Dec. 2022</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- Education -->
+
+        <!-- Work Experience -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px 20px 10px;width:100%;vertical-align:middle">
+              <heading>Work Experience</heading>
+              <div class="cv-list">
+                <div class="cv-row">
+                  <div class="cv-logo"><img src="media/personal/zillow.png" alt="Zillow"></div>
+                  <div class="cv-body">
+                    <span class="cv-title">Zillow</span><br>
+                    <span class="cv-role">Applied Scientist Intern</span>
+                  </div>
+                  <div class="cv-date">Jun. 2026 – Present</div>
+                </div>
+                <div class="cv-row">
+                  <div class="cv-logo"><img src="media/personal/huawei.png" alt="Huawei"></div>
+                  <div class="cv-body">
+                    <span class="cv-title">Noah's Ark Lab @ Huawei Canada</span><br>
+                    <span class="cv-role">Research Intern</span>
+                  </div>
+                  <div class="cv-date">May 2023 – Apr. 2024</div>
+                </div>
+              </div>
+              <div class="cv-lines">
+                <div class="cv-line">
+                  <div class="cv-line-text"><span class="cv-line-title">VecML Inc.</span>, Software Engineer Intern</div>
+                  <div class="cv-date">Jan. 2025 – Jul. 2025</div>
+                </div>
+                <div class="cv-line">
+                  <div class="cv-line-text"><span class="cv-line-title">BIMStudio Inc.</span>, Software Engineer</div>
+                  <div class="cv-date">Oct. 2020 – Aug. 2021</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- Work Experience -->
+
+        <!-- Publications -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto">
+          <tbody>
+            <tr>
+              <td style="padding:20px 20px 10px;width:100%;vertical-align:middle">
+                <heading>Selected Publications</heading>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- ReCoSplat -->
+          <tr onmouseout="recosplat_stop()" onmouseover="recosplat_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='recosplat_video'><video style="width:200px;height:81px;object-fit:cover" muted autoplay loop>
+                <source src="media/papers/recosplat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img id='recosplat_image' src='media/papers/recosplat.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function recosplat_start() {
+                  document.getElementById('recosplat_video').style.opacity = "1";
+                }
+                function recosplat_stop() {
+                  document.getElementById('recosplat_video').style.opacity = "0";
+                }
+                recosplat_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://freemancheng.com/ReCoSplat/">
+                <papertitle>ReCoSplat: Autoregressive Feed-Forward Gaussian Splatting via Render-and-Compare</papertitle>
+              </a>
+              <br><strong>Freeman Cheng</strong>, Botao Ye, Xueting Li, Junqi You, Fangneng Zhan, Ming-Hsuan Yang
+              <br>
+              <em>arXiv 2026</em>
+              <br>
+              <a href="https://freemancheng.com/ReCoSplat/">Project Page</a> /
+              <a href="https://arxiv.org/abs/2603.09968">arXiv</a>
+            </td>
+          </tr>
+          <!-- ReCoSplat -->
+          <!-- MirrorGaussian -->
+          <tr onmouseout="mirror_gaussian_stop()" onmouseover="mirror_gaussian_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mirror_gaussian_video'><video width=100% height=100% muted autoplay loop>
+                <source src="media/papers/mirror_gaussian.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img id='mirror_gaussian_image' src='media/papers/mirror_gaussian.png' width="200">
+              </div>
+              <script type="text/javascript">
+                function mirror_gaussian_start() {
+                  document.getElementById('mirror_gaussian_video').style.opacity = "1";
+                }
+                function mirror_gaussian_stop() {
+                  document.getElementById('mirror_gaussian_video').style.opacity = "0";
+                }
+                mirror_gaussian_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://mirror-gaussian.github.io/">
+                <papertitle>MirrorGaussian: Reflecting 3D Gaussians for Reconstructing Mirror Reflections</papertitle>
+              </a>
+              <br>Jiayue Liu*, Xiao Tang*, <strong>Freeman Cheng</strong>, Roy Yang, Zhihao Li, Jianzhuang Liu, Yi Huang, Jiaqi Lin, Shiyong Liu, Xiaofei Wu, Songcen Xu, Chun Yuan
+              <br>
+              <em>ECCV 2024</em>
+              <br>
+              <a href="https://mirror-gaussian.github.io/">Project Page</a> /
+              <a href="https://arxiv.org/pdf/2405.11921">arXiv</a>
+            </td>
+          </tr>
+          <!-- MirrorGaussian -->
+        </tbody></table>
+        <!-- Publications -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:0px">&nbsp;
+                <p style="text-align:right;font-size:small;">Template from <a href="https://jonbarron.info">Jon Barron</a></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody></table>
+</body>
+</html>
